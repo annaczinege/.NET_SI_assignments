@@ -12,5 +12,10 @@ namespace CreateClass
         public Employee(string name, string birthDate) : base(name, birthDate)
         {
         }
+
+        public override string ToString()
+        {
+            return $"Name of Employee: {name}, Salary: {Salary}, Profession: {Profession}";
+        }
     }
 }

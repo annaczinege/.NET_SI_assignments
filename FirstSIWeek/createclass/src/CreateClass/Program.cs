@@ -10,6 +10,8 @@ namespace CreateClass
             person.gender = Gender.Male;
             Employee martha = new Employee("Martha", "1976-06-11");
             martha.gender = Gender.Female;
+            martha.Salary = 500000;
+            martha.Profession = "Chef";
 
             Console.WriteLine(person.ToString()); 
             Console.WriteLine(martha.ToString()); 
