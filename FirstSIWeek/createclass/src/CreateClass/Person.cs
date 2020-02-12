@@ -15,7 +15,7 @@ namespace CreateClass
 
        
         public override String ToString() {
-            return "Name of person: " + name + ", Date of Birth: " + birthDate + ", Gender: " + gender;
+            return $"Name of person: {name}, Date of Birth: {birthDate}, Gender: {gender}";
         }
 
     }
