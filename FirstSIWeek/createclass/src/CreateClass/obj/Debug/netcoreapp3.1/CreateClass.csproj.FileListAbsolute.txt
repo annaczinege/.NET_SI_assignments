@@ -1,0 +1,11 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\bin\Debug\netcoreapp3.1\CreateClass.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\bin\Debug\netcoreapp3.1\CreateClass.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\bin\Debug\netcoreapp3.1\CreateClass.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\bin\Debug\netcoreapp3.1\CreateClass.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\bin\Debug\netcoreapp3.1\CreateClass.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\bin\Debug\netcoreapp3.1\CreateClass.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\obj\Debug\netcoreapp3.1\CreateClass.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\obj\Debug\netcoreapp3.1\CreateClass.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\obj\Debug\netcoreapp3.1\CreateClass.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\obj\Debug\netcoreapp3.1\CreateClass.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\createclass\src\CreateClass\obj\Debug\netcoreapp3.1\CreateClass.pdb
