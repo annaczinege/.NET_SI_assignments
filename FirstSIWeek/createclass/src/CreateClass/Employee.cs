@@ -8,9 +8,11 @@ namespace CreateClass
     {
         public int Salary { get; set; }
         public string Profession { get; set; }
+        private Room room;
 
         public Employee(string name, string birthDate) : base(name, birthDate)
         {
+            room = null;
         }
 
         public override string ToString()
