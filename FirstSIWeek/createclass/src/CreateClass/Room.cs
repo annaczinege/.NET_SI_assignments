@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CreateClass
 {
-    public class Room
+    class Room
     {
-        public int Number { get => Number; set => Number = value; }
+        public int Number { get; set; }
 
         public Room(int number)
         {

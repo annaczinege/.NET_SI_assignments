@@ -4,20 +4,28 @@ using System.Text;
 
 namespace CreateClass
 {
-    public class Employee : Person
+    class Employee : Person, IClonable
     {
         public int Salary { get; set; }
         public string Profession { get; set; }
-        private Room room;
+        public Room Room { get; set; }
 
-        public Employee(string name, string birthDate) : base(name, birthDate)
+        public Employee(string name, DateTime birthDate, Room Room) : base(name, birthDate)
         {
-            room = null;
+            this.Room = Room;
         }
 
         public override string ToString()
         {
-            return $"Name of Employee: {name}, Salary: {Salary}, Profession: {Profession}";
+            return $"Name of Employee: {name}, Salary: {Salary}, Profession: {Profession}, Room number: {Room.Number}";
         }
+
+        public object Clone()
+        {
+            Employee newEmployee = (Employee)this.MemberwiseClone();
+            newEmployee.Room = new Room(Room.Number);
+            return newEmployee;
+        }
+
     }
 }
