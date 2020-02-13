@@ -1,0 +1,17 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\bin\Debug\netcoreapp3.1\TimerEvent.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\bin\Debug\netcoreapp3.1\TimerEvent.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\bin\Debug\netcoreapp3.1\TimerEvent.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\bin\Debug\netcoreapp3.1\TimerEvent.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\bin\Debug\netcoreapp3.1\TimerEvent.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\bin\Debug\netcoreapp3.1\TimerEvent.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent_MarkupCompile.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent_MarkupCompile.lref
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent.g.resources
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\timerevents\src\TimerEvent\obj\Debug\netcoreapp3.1\TimerEvent.pdb
