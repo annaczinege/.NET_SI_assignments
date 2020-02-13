@@ -1,0 +1,11 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\bin\Debug\netcoreapp3.1\SortString.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\bin\Debug\netcoreapp3.1\SortString.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\bin\Debug\netcoreapp3.1\SortString.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\bin\Debug\netcoreapp3.1\SortString.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\bin\Debug\netcoreapp3.1\SortString.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\bin\Debug\netcoreapp3.1\SortString.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\obj\Debug\netcoreapp3.1\SortString.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\obj\Debug\netcoreapp3.1\SortString.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\obj\Debug\netcoreapp3.1\SortString.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\obj\Debug\netcoreapp3.1\SortString.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FirstSIWeek\sortstring\src\SortString\obj\Debug\netcoreapp3.1\SortString.pdb
