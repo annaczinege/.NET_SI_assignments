@@ -1,0 +1,492 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HandsOnLab1</name>
+    </assembly>
+    <members>
+        <member name="T:HandsOnLab1.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.CustomerEdit">
+            <summary>
+            Interaction logic for UserControl1.xaml
+            </summary>
+            <summary>
+            CustomerEdit
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.CustomerEdit.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.Window1">
+            <summary>
+            Interaction logic for Window1.xaml
+            </summary>
+            <summary>
+            Window1
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.Window1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HandsOnLab1.Window1"/> class.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.Window1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.ClientEntities.AustralianStates">
+            <summary>
+            Australian states contains current states of Australia.
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.ClientEntities.CustomerUpdate">
+            <summary>
+            This class is a ViewModel for customer edit page.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ClientEntities.CustomerUpdate.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HandsOnLab1.ClientEntities.CustomerUpdate"/> class.
+            </summary>
+            <param name="accountId">Identifier of the account.</param>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.AccountId">
+            <summary>
+            Gets account identifier.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.CompanyName">
+            <summary>
+            Gets or sets the name of the company.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.CompanyPhoneNumber">
+            <summary>
+            Gets or sets the phone number of the company.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.MainContactFirstName">
+            <summary>
+            Gets or sets main contact person's first name.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.MainContactLastName">
+            <summary>
+            Gets or sets main contact person's last name.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.MainContactNumber">
+            <summary>
+            Gets or sets main contact person's ContactNumber.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.MainContactRole">
+            <summary>
+            Gets or sets main contact person's role.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.Address1">
+            <summary>
+            Gets or sets the first address of the company.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.Address2">
+            <summary>
+            Gets or sets the alternative address of the company.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.Address3">
+            <summary>
+            Gets or sets the another alternative address of the company.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.Address4">
+            <summary>
+            Gets or sets the another address of the company.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.City">
+            <summary>
+            Gets or sets the city of the customer.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.State">
+            <summary>
+            Gets or sets the state of the customer.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.CustomerUpdate.PostCode">
+            <summary>
+            Gets or sets the post code of the customer.
+            </summary>
+        </member>
+        <member name="E:HandsOnLab1.ClientEntities.CustomerUpdate.PropertyChanged">
+            <summary>
+            Implicit implementation of the INotifyPropertyChanged.PropertyChanged event.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ClientEntities.CustomerUpdate.OnPropertyChanged(System.String)">
+            <summary>
+            Throws the <c>PropertyChanged</c> event.
+            </summary>
+            <param name="propertyName">The name of the property that was modified.</param>
+        </member>
+        <member name="T:HandsOnLab1.ClientEntities.ProductSummary">
+            <summary>
+            Product summary information.
+            </summary>
+            <remarks>
+            Summary information for a product. Useful for displaying in lists. For a complete representation for a product consider <see cref="T:ClientEntities.Product"/>.
+            </remarks>
+            <seealso cref="!:ClientEntities.Product"/>
+            <seealso cref="T:HandsOnLab1.ClientEntities.ProductSummaryCollection"/>
+        </member>
+        <member name="M:HandsOnLab1.ClientEntities.ProductSummary.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HandsOnLab1.ClientEntities.ProductSummary"/> class.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.ProductId">
+            <summary>
+            Gets or sets the unique ProductId.
+            </summary>
+            <value>The product id.</value>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.Sku">
+            <summary>
+            Gets or sets the Stock Keeping Unit for the product.
+            </summary>
+            <value>The sku.</value>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.Code">
+            <summary>
+            Gets or sets the product code for the sku.
+            </summary>
+            <value>The product code.</value>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.Name">
+            <summary>
+            Gets or sets the descriptive name of the product.
+            </summary>
+            <value>The product name.</value>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.ShortDescription">
+            <summary>
+            Gets or sets the short description of the product.
+            </summary>
+            <value>The short product description.</value>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.Manufacturer">
+            <summary>
+            Gets or sets the manufacturer name.
+            </summary>
+            <value>The manufacturer.</value>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.UnitPrice">
+            <summary>
+            Gets or sets the default unit price.
+            </summary>
+            <value>Default unit price.</value>
+        </member>
+        <member name="P:HandsOnLab1.ClientEntities.ProductSummary.LowestPrice">
+            <summary>
+            Gets or sets the lowest price available for the product.
+            </summary>
+            <value>The lowest price.</value>
+        </member>
+        <member name="E:HandsOnLab1.ClientEntities.ProductSummary.PropertyChanged">
+            <summary>
+            Implicit implementation of the INotifyPropertyChanged.PropertyChanged event.
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.ClientEntities.ProductSummaryCollection">
+            <summary>
+            Collection of <see cref="T:HandsOnLab1.ClientEntities.ProductSummary"/> entities.
+            </summary>
+            <seealso cref="!:ClientEntities.Product"/>
+            <seealso cref="T:HandsOnLab1.ClientEntities.ProductSummary"/>
+        </member>
+        <member name="M:HandsOnLab1.ClientEntities.ProductSummaryCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HandsOnLab1.ClientEntities.ProductSummaryCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ClientEntities.ProductSummaryCollection.#ctor(System.Collections.Generic.List{HandsOnLab1.ClientEntities.ProductSummary})">
+            <summary>
+            Initializes a new instance of the <see cref="T:HandsOnLab1.ClientEntities.ProductSummaryCollection"/> class.
+            </summary>
+            <param name="list">The list from which the elements are copied.</param>
+            <exception cref="T:System.ArgumentNullException">The list parameter cannot be null.</exception>
+        </member>
+        <member name="T:HandsOnLab1.Constants.ImageConstants">
+            <summary>
+            Constants for image resources.
+            </summary>
+        </member>
+        <member name="F:HandsOnLab1.Constants.ImageConstants.SAVE_ICON">
+            <summary>
+            The Save Icon
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.Converters.CurrencyConverter">
+            <summary>
+            Converts numeric values to a currency representation as a string. Can convert back again.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.Converters.CurrencyConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value. The data binding engine calls this method when it propagates a value from the binding source to the binding target.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value.If the method returns null, the valid null value is used.A return value of <see cref="T:System.Windows.DependencyProperty"></see>.<see cref="F:System.Windows.DependencyProperty.UnsetValue"></see> indicates that the converter produced no value and that the binding uses the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see>, if available, or the default value instead.A return value of <see cref="T:System.Windows.Data.Binding"></see>.<see cref="F:System.Windows.Data.Binding.DoNothing"></see> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see> or default value.
+            </returns>
+        </member>
+        <member name="M:HandsOnLab1.Converters.CurrencyConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value. The data binding engine calls this method when it propagates a value from the binding target to the binding source.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value.If the method returns null, the valid null value is used.A return value of <see cref="T:System.Windows.DependencyProperty"></see>.<see cref="F:System.Windows.DependencyProperty.UnsetValue"></see> indicates that the converter produced no value and that to the binding uses the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see>, if available, or the default value instead.A return value of <see cref="T:System.Windows.Data.Binding"></see>.<see cref="F:System.Windows.Data.Binding.DoNothing"></see> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see> or default value.
+            </returns>
+        </member>
+        <member name="T:HandsOnLab1.Converters.EnumListConverter">
+            <summary>
+            Converts an <see cref="T:System.Enum"/> type to a <see cref="T:System.Collections.Generic.IList`1"/> type.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.Converters.EnumListConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value. The data binding engine calls this method when it propagates a value from the binding source to the binding target.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value.If the method returns null, the valid null value is used.A return value of <see cref="T:System.Windows.DependencyProperty"></see>.<see cref="F:System.Windows.DependencyProperty.UnsetValue"></see> indicates that the converter produced no value and that the binding uses the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see>, if available, or the default value instead.A return value of <see cref="T:System.Windows.Data.Binding"></see>.<see cref="F:System.Windows.Data.Binding.DoNothing"></see> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see> or default value.
+            </returns>
+        </member>
+        <member name="M:HandsOnLab1.Converters.EnumListConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value. The data binding engine calls this method when it propagates a value from the binding target to the binding source.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value.If the method returns null, the valid null value is used.A return value of <see cref="T:System.Windows.DependencyProperty"></see>.<see cref="F:System.Windows.DependencyProperty.UnsetValue"></see> indicates that the converter produced no value and that to the binding uses the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see>, if available, or the default value instead.A return value of <see cref="T:System.Windows.Data.Binding"></see>.<see cref="F:System.Windows.Data.Binding.DoNothing"></see> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see> or default value.
+            </returns>
+        </member>
+        <member name="T:HandsOnLab1.Converters.EnumValueToDescriptionConverter">
+            <summary>
+            Supports conversion from an enum value to the description of that value.  If the enum value is decorated
+            with the <see cref="T:System.ComponentModel.DescriptionAttribute"/> attribute, its Description value is returned.
+            Otherwise, the name of the enum value is returned.
+            </summary>
+            <remarks>
+            The <see cref="T:System.ComponentModel.DescriptionAttribute"/> attribute is optional, however its value must be unique
+            within the enum for the <c>ConvertBack</c> method to work correctly.
+            </remarks>
+        </member>
+        <member name="M:HandsOnLab1.Converters.EnumValueToDescriptionConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value. The data binding engine calls this method when it propagates a value from the binding source to the binding target.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.A return value of <see cref="T:System.Windows.DependencyProperty"></see>.<see cref="F:System.Windows.DependencyProperty.UnsetValue"></see> indicates that the converter produced no value and that the binding uses the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see>, if available, or the default value instead.A return value of <see cref="T:System.Windows.Data.Binding"></see>.<see cref="F:System.Windows.Data.Binding.DoNothing"></see> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see> or default value.
+            </returns>
+        </member>
+        <member name="M:HandsOnLab1.Converters.EnumValueToDescriptionConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value. The data binding engine calls this method when it propagates a value from the binding target to the binding source.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.A return value of <see cref="T:System.Windows.DependencyProperty"></see>.<see cref="F:System.Windows.DependencyProperty.UnsetValue"></see> indicates that the converter produced no value and that to the binding uses the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see>, if available, or the default value instead.A return value of <see cref="T:System.Windows.Data.Binding"></see>.<see cref="F:System.Windows.Data.Binding.DoNothing"></see> indicates that the binding does not transfer the value or use the <see cref="P:System.Windows.Data.BindingBase.FallbackValue"></see> or default value.
+            </returns>
+        </member>
+        <member name="M:HandsOnLab1.Converters.EnumValueToDescriptionConverter.Convert(System.Enum)">
+            <summary>
+            Convert the <see cref="T:System.Enum"/> to a string.
+            </summary>
+            <param name="value">Enum value</param>
+            <returns>Converterted string representation of the <see cref="T:System.Enum"/> value.</returns>
+        </member>
+        <member name="M:HandsOnLab1.Converters.EnumValueToDescriptionConverter.Convert(System.Reflection.MemberInfo)">
+            <summary>
+            Convert the <see cref="T:System.Reflection.MemberInfo"/> to a string.
+            </summary>
+            <param name="member">Member information</param>
+            <returns>Convertered string representation of the <see cref="T:System.Reflection.MemberInfo"/></returns>
+        </member>
+        <member name="T:HandsOnLab1.Converters.UriToBitmapConverter">
+            <summary>
+            Converter for transforming between <see cref="T:System.Uri"/> and <see cref="!:BitMap"/>.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.Converters.UriToBitmapConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Convert <see cref="T:System.Uri"/> to <see cref="!:BitMap"/>
+            </summary>
+            <param name="value">An Unique Resource Identifier.</param>
+            <param name="targetType">Target type.</param>
+            <param name="parameter">Additional parameter</param>
+            <param name="culture">CultureInfo</param>
+            <returns><see cref="!:BitMap"/> object based on the uri.</returns>
+        </member>
+        <member name="M:HandsOnLab1.Converters.UriToBitmapConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Convert a <see cref="!:BitMap"/> image to an <see cref="T:System.Uri"/>.
+            </summary>
+            <param name="value">The bitmap image to convert.</param>
+            <param name="targetType">Target type</param>
+            <param name="parameter">Additional parameter.</param>
+            <param name="culture">Culture info.</param>
+            <returns>Reuturns an <see cref="T:System.Uri"/> for the image.</returns>
+        </member>
+        <member name="T:HandsOnLab1.ImageList">
+            <summary>
+            Interaction logic for ImageList.xaml
+            </summary>
+            <summary>
+            ImageList
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ImageList.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HandsOnLab1.ImageList"/> class.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.ImageList.Images">
+            <summary>
+            Gets all stored images.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ImageList.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.ProductList">
+            <summary>
+            Interaction logic for ProductList.xaml
+            </summary>
+            <summary>
+            ProductList
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ProductList.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HandsOnLab1.ProductList"/> class.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ProductList.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HandsOnLab1.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:HandsOnLab1.ServiceAgents.ImageAgent">
+            <summary>
+            This service provides functionality to get images from the root directory of the application.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ServiceAgents.ImageAgent.GetImages">
+            <summary>
+            Collect images from a root folder.
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.List`1"/> of image file full paths.</returns>
+        </member>
+        <member name="T:HandsOnLab1.ServiceAgents.ProductAgent">
+            <summary>
+            This service provides functionality for getting product list.
+            </summary>
+        </member>
+        <member name="M:HandsOnLab1.ServiceAgents.ProductAgent.GetProductList">
+            <summary>
+            Provide <see cref="T:HandsOnLab1.ClientEntities.ProductSummaryCollection"/> of current products.
+            </summary>
+            <returns><see cref="T:HandsOnLab1.ClientEntities.ProductSummaryCollection"/></returns>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

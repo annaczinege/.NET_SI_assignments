@@ -1,0 +1,128 @@
+﻿<UserControl x:Class="HandsOnLab1.CustomerEdit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:const="clr-namespace:HandsOnLab1.Constants"
+             xmlns:local="clr-namespace:HandsOnLab1"
+             xmlns:converters="clr-namespace:HandsOnLab1.ClientEntities"
+             xmlns:converters1="clr-namespace:HandsOnLab1.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <converters1:EnumListConverter x:Key="enumListConverter"/>
+        <converters1:EnumValueToDescriptionConverter x:Key="enumValueConverter"/>
+        <Style x:Key="labelColumnStyle" TargetType="{x:Type
+ColumnDefinition}">
+            <Setter Property="Width" Value="200"/>
+        </Style>
+        <Style x:Key="dataColumnStyle" TargetType="{x:Type
+ColumnDefinition}">
+            <Setter Property="Width" Value="Auto"/>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Width" Value="200"/>
+        </Style>
+        <Style TargetType="{x:Type ComboBox}">
+            <Setter Property="Width" Value="200"/>
+        </Style>
+    </UserControl.Resources>
+    <UserControl.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Save" CanExecute="CanSave" Executed="ExecuteSave"/>
+    </UserControl.CommandBindings>
+    <StackPanel>
+        <ToolBar>
+            <Button Command="ApplicationCommands.Save">
+                <Image Source="{Binding Source={x:Static const:ImageConstants.SAVE_ICON}}"/>
+            </Button>
+            <Button Command="ApplicationCommands.Undo">
+                <Image Source="{Binding Source={x:Static const:ImageConstants.UNDO_ICON}}"/>
+            </Button>
+        </ToolBar>
+        <GroupBox Header="Customer Info">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Style="{StaticResource labelColumnStyle}"/>
+                    <ColumnDefinition Style="{StaticResource dataColumnStyle}"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0">Acc #</Label>
+                <TextBlock Grid.Column="1" Grid.Row="0"
+Text="{Binding Path=Customer.AccountId}"/>
+                <Label Grid.Column="0" Grid.Row="1">Company
+Name</Label>
+                <TextBox Grid.Column="1" Grid.Row="1"
+Text="{Binding Path=Customer.CompanyName}"/>
+                <Label Grid.Column="0" Grid.Row="2">Phone</Label>
+                <TextBox Grid.Column="1" Grid.Row="2"
+Text="{Binding Path=Customer.CompanyPhoneNumber}"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Main Contact">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0">First Name</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Path=Customer.MainContactFirstName}"/>
+                <Label Grid.Column="0" Grid.Row="1">Last Name</Label>
+                <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=Customer.MainContactLastName}"/>
+                <Label Grid.Column="0" Grid.Row="2">Contact number</Label>
+                <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Path=Customer.MainContactNumber}"/>
+                <Label Grid.Column="0" Grid.Row="3">Role</Label>
+                <ComboBox Grid.Column="1" Grid.Row="3" Text="{Binding Path=Customer.MainContactRole}" Width="200"
+IsEditable="True">
+                    <ComboBoxItem>CEO</ComboBoxItem>
+                    <ComboBoxItem>Admin</ComboBoxItem>
+                    <ComboBoxItem>Department Manager</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Address">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0">Address 1</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Path=Customer.Address1}"/>
+                <Label Grid.Column="0" Grid.Row="1">Address 2</Label>
+                <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=Customer.Address2}"/>
+                <Label Grid.Column="0" Grid.Row="2">Address 3</Label>
+                <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Path=Customer.Address3}"/>
+                <Label Grid.Column="0" Grid.Row="3">Address 4</Label>
+                <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding Path=Customer.Address4}"/>
+                <Label Grid.Column="0" Grid.Row="4">City</Label>
+                <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding Path=Customer.City}"/>
+                <Label Grid.Column="0" Grid.Row="5">State</Label>
+                <ComboBox x:Name="ctrState" ItemsSource="{Binding Source={x:Type AustralianStates}, Converter={StaticResource enumListConverter}}" 
+                          SelectedValue="{Binding Path=Customer.State, Converter={StaticResource enumValueConverter}}"
+                    Grid.Column="1" Grid.Row="5"/>
+                <Label Grid.Column="0" Grid.Row="6">PostCode</Label>
+                <TextBox Grid.Column="1" Grid.Row="6" Text="{Binding Path=Customer.PostCode}"/>
+            </Grid>
+        </GroupBox>
+    </StackPanel>
+</UserControl>
