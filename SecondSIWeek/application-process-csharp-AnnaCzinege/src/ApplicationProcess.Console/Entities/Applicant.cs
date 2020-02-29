@@ -7,6 +7,8 @@ namespace Codecool.ApplicationProcess.Entities
     /// <summary>
     /// A person who applies to Codecool.
     /// </summary>
+    [Serializable]
+    [XmlRoot("Applicant")]
     public class Applicant : Person
     {
         private static int _idCounter = 1;
@@ -34,16 +36,19 @@ namespace Codecool.ApplicationProcess.Entities
         /// <summary>
         /// Gets or sets the application code which is generated from the FirstName, LastName and Id.
         /// </summary>
+        [XmlElement("ApplicationCode")]
         public int ApplicationCode { get; set; }
 
         /// <summary>
         /// Gets or sets the current status of the application.
         /// </summary>
+        [XmlElement("Status")]
         public ApplicationStatus Status { get; set; }
 
         /// <summary>
         /// Gets or sets the StartDate of the applicant as a Codecooler.
         /// </summary>
+        [XmlElement("StartDate")]
         public DateTime? StartDate { get; set; }
 
         /// <summary>

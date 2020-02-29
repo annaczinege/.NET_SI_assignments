@@ -1,4 +1,6 @@
-﻿namespace Codecool.ApplicationProcess.Entities
+﻿using System.Xml.Serialization;
+
+namespace Codecool.ApplicationProcess.Entities
 {
     /// <summary>
     /// Person class.
@@ -27,21 +29,25 @@
         /// <summary>
         /// Gets or sets the unique identifier of the person.
         /// </summary>
+        [XmlElement("Id")]
         public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the firstname of the person.
         /// </summary>
+        [XmlElement("FirstName")]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Gets or sets the lastname of the person.
         /// </summary>
+        [XmlElement("LastName")]
         public string LastName { get; set; }
 
         /// <summary>
         /// Gets or sets the phone number of the person.
         /// </summary>
+        [XmlElement("PhoneNumber")]
         public string PhoneNumber { get; set; }
 
         /// <summary>

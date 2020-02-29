@@ -7,6 +7,8 @@ namespace Codecool.ApplicationProcess.Entities
     /// <summary>
     /// Application of applicants.
     /// </summary>
+    [Serializable]
+    [XmlRoot("Application")]
     public class Application
     {
         /// <summary>
@@ -33,16 +35,19 @@ namespace Codecool.ApplicationProcess.Entities
         /// <summary>
         /// Gets or sets contact <see cref="Mentor"/> of the application.
         /// </summary>
+        [XmlElement("Mentor")]
         public Mentor Mentor { get; set; }
 
         /// <summary>
         /// Gets or sets <see cref="Applicant"/> who applied.
         /// </summary>
+        [XmlElement("Applicant")]
         public Applicant Applicant { get; set; }
 
         /// <summary>
         /// Gets or sets the date of the <see cref="Application"/>.
         /// </summary>
+        [XmlElement("ApplicationDate")]
         public DateTime ApplicationDate { get; set; }
 
         /// <summary>

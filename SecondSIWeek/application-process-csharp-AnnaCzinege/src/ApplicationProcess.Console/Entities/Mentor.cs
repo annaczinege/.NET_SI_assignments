@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Xml.Serialization;
 
 namespace Codecool.ApplicationProcess.Entities
@@ -6,6 +7,8 @@ namespace Codecool.ApplicationProcess.Entities
     /// <summary>
     /// A mentor is a person in Codecool who is responsible for managing and supporting applied students.
     /// </summary>
+    [Serializable]
+    [XmlRoot("Mentor")]
     public class Mentor : Person
     {
         private static int _idCounter = 1;
@@ -32,16 +35,19 @@ namespace Codecool.ApplicationProcess.Entities
         /// <summary>
         /// Gets or sets the nickname of the mentor.
         /// </summary>
+        [XmlElement("Nickname")]
         public string Nickname { get; set; }
 
         /// <summary>
         /// Gets or sets the location of the mentor.
         /// </summary>
+        [XmlElement("City")]
         public City City { get; set; }
 
         /// <summary>
         /// Gets or sets the favourite programing language of a mentor.
         /// </summary>
+        [XmlElement("ProgrammingLanguage")]
         public string ProgrammingLanguage { get; set; }
 
         /// <summary>

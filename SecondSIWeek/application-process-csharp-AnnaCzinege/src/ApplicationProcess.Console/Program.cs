@@ -19,6 +19,14 @@ namespace Codecool.ApplicationProcess
             { "5", City.Bucharest },
         };
 
+        private static readonly Dictionary<string, string> _languages = new Dictionary<string, string>()
+        {
+            { "1", "C#" },
+            { "2", "Java" },
+            { "3", "Ruby" },
+            { "4", "Javascript" },
+        };
+
         private static IApplicationRepository _repo;
 
         /// <summary>
@@ -27,7 +35,15 @@ namespace Codecool.ApplicationProcess
         /// <param name="args">Command line arguments.</param>
         public static void Main(string[] args)
         {
-            _repo = new InMemoryRepository();
+            if (args.Length > 0 && args[0] == "xml")
+            {
+                _repo = new XMLRepository();
+            }
+            else
+            {
+                _repo = new InMemoryRepository();
+            }
+
             PrintMenu();
             SelectMenuItem();
         }
@@ -65,17 +81,42 @@ namespace Codecool.ApplicationProcess
 
         private static void GetStudentEmailList()
         {
-            throw new NotImplementedException();
+            var emailList = _repo.GetAppliedStudentEmailList();
+
+            foreach (var email in emailList)
+            {
+                Console.WriteLine($"{email}\n");
+            }
         }
 
         private static void GetApplicantsOfMentor()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Please enter a mentor name: ");
+            string mentorName = Console.ReadLine();
+
+            var applicantsOfMentor = _repo.GetApplicantsOf(mentorName);
+            Console.WriteLine($"The applicants of {mentorName} are:\n");
+
+            foreach (var applicant in applicantsOfMentor)
+            {
+                Console.WriteLine($"{applicant.ToString()}\n");
+            }
         }
 
         private static void GetMentorWithFavouriteLanuage()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(@"Please choose a language: 
+1 - C#
+2 - Java
+3 - Ruby
+4 - Javascript");
+            var language = Console.ReadLine();
+            var mentors = _repo.GetAllMentorWhomFavoriteLanguage(_languages[language]);
+
+            foreach (var mentor in mentors)
+            {
+                Console.WriteLine(mentor);
+            }
         }
 
         private static void GetAmountOfApplicants()
@@ -92,7 +133,7 @@ namespace Codecool.ApplicationProcess
 
             var amount = _repo.AmountOfApplicationAfter(startDate);
 
-            Console.WriteLine($"The ");
+            Console.WriteLine($"The amount of applicants after {answer} is: {amount}.");
         }
 
         /// <summary>

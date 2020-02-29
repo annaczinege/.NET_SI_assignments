@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Codecool.ApplicationProcess": {
+      "commandName": "Project",
+      "commandLineArgs": "args1 args2 args3"
+    }
+  }
+}
