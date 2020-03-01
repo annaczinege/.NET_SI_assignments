@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegularExpression"
         mc:Ignorable="d"
-        Title="Input Validator" Height="220" Width="350">
-    <Grid>
-
-    </Grid>
+        Title="Input Validator" Height="220" Width="350" KeyDown="Window_KeyDown">
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="0,20,0,0"/>
+            </Style>
+        </StackPanel.Resources>
+        <Label>Name</Label>
+        <TextBox x:Name="txtName" Width="300"></TextBox>
+        <Label>Phone</Label>
+        <TextBox x:Name="txtPhone" Width="300"></TextBox>
+        <Label>Email</Label>
+        <TextBox x:Name="txtEmail" Width="300"></TextBox>
+        <Button x:Name="btnSave" Width="50" Click="btnSave_Click">Save</Button>
+    </StackPanel>
 </Window>
