@@ -105,7 +105,7 @@
       <PhoneNumber>003620/423-4261</PhoneNumber>
       <Email>et.risus.quisque@mollis.co.uk</Email>
       <ApplicationCode>139</ApplicationCode>
-      <Status>Recejted</Status>
+      <Status>Rejected</Status>
       <StartDate xsi:nil="true" />
     </Applicant>
     <Applicant>
@@ -229,7 +229,7 @@
         <PhoneNumber>003620/423-4261</PhoneNumber>
         <Email>et.risus.quisque@mollis.co.uk</Email>
         <ApplicationCode>139</ApplicationCode>
-        <Status>Recejted</Status>
+        <Status>Rejected</Status>
         <StartDate xsi:nil="true" />
       </Applicant>
       <ApplicationDate>2018-09-01T00:00:00</ApplicationDate>
