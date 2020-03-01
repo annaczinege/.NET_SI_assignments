@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Xml.Linq;
 using System.Xml.Serialization;
@@ -26,21 +27,8 @@ namespace Codecool.ApplicationProcess.Data
         /// <inheritdoc/>
         public int AmountOfApplicationAfter(DateTime date)
         {
-            var applicationDates = _doc.Descendants("Applications").Descendants("Application");
-            int applicationAfter = 0;
-            foreach (var application in applicationDates)
-            {
-                StringReader reader = new StringReader(application.ToString());
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(Application));
-                Application appl = (Application)xmlSerializer.Deserialize(reader);
-
-                if (appl.ApplicationDate > date)
-                {
-                    applicationAfter += 1;
-                }
-            }
-
-            return applicationAfter;
+            return _doc.Descendants("Applications").Descendants("Application")
+                .Count(application => (DateTime)application.Element("ApplicationDate") > date);
         }
 
         /// <inheritdoc/>
@@ -130,15 +118,9 @@ namespace Codecool.ApplicationProcess.Data
         /// <inheritdoc/>
         public IEnumerable<string> GetAppliedStudentEmailList()
         {
-            var applicants = _doc.Descendants("Applications").Descendants("Application")
-                .Descendants("Applicant").Descendants("Email");
-            var emails = new List<string>();
-            foreach (var applicant in applicants)
-            {
-                emails.Add(applicant.Value);
-            }
-
-            return emails;
+            return _doc.Descendants("Applicants").Descendants("Applicant")
+                .Where(applicant => applicant.Element("Status").Value == "Applied")
+                .Select(applicant => applicant.Element("Email").Value).ToList();
         }
     }
 }

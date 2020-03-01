@@ -31,59 +31,33 @@ namespace Codecool.ApplicationProcess.Data
         /// <inheritdoc/>
         public int AmountOfApplicationAfter(DateTime date)
         {
-            Application[] query = _applications.Where(application => application.ApplicationDate > date).ToArray();
-            int queryLength = query.Length;
-            return queryLength;
-            throw new NotImplementedException();
+            return _applications.Count(application => application.ApplicationDate > date);
         }
 
         /// <inheritdoc/>
         public IEnumerable<Mentor> GetAllMentorFrom(City city)
         {
-            var query = from mentor in _mentors
-                        where mentor.City.Equals(city)
-                        select mentor;
-            return query;
-            throw new NotImplementedException();
+            return _mentors.Where(mentor => mentor.City == city).ToList();
         }
 
         /// <inheritdoc/>
         public IEnumerable<Mentor> GetAllMentorWhomFavoriteLanguage(string language)
         {
-            var query = from mentor in _mentors
-                        where mentor.ProgrammingLanguage.Equals(language)
-                        select mentor;
-            return query;
+            return _mentors.Where(mentor => language.Equals(mentor.ProgrammingLanguage)).ToList();
         }
 
         /// <inheritdoc/>
         public IEnumerable<Applicant> GetApplicantsOf(string contactMentorName)
         {
-            var applications = _applications.Where(application => contactMentorName.Equals(application.Mentor.FirstName)
-            || contactMentorName.Equals(application.Mentor.LastName)
-            || contactMentorName.Equals(application.Mentor.Nickname)
-            || contactMentorName.Equals($"{application.Mentor.FirstName} {application.Mentor.LastName}"));
-
-            var applicants = new List<Applicant>();
-            foreach (var application in applications)
-            {
-                applicants.Add(application.Applicant);
-            }
-
-            return applicants;
+            return _applications.Where(application => contactMentorName.Equals(application.Mentor.Nickname))
+                .Select(application => application.Applicant).ToList();
         }
 
         /// <inheritdoc/>
         public IEnumerable<string> GetAppliedStudentEmailList()
         {
-            var emails = new List<string>();
-
-            foreach (var applicant in _applicants)
-            {
-                emails.Add(applicant.Email);
-            }
-
-            return emails;
+            return _applicants.Where(applicant => applicant.Status.Equals("Applied"))
+                .Select(applicant => applicant.Email).ToList();
         }
 
         /// <summary>
