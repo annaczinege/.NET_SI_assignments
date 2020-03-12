@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export class Pokemon extends Component {
+  Capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
   render() {
-    const { name } = this.props.pokemon;
+    let { name } = this.props.pokemon;
+    name = this.Capitalize(name);
     return (
       <div>
         <Link
