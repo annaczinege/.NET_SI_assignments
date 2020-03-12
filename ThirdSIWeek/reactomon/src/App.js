@@ -8,11 +8,18 @@ import Axios from "axios";
 
 class App extends Component {
   state = {
-    pokemons: []
+    pokemons: [],
+    types: []
   };
   componentDidMount() {
     Axios.get("https://pokeapi.co/api/v2/pokemon").then(res =>
       this.setState({ pokemons: res.data.results })
+    );
+  }
+
+  componentDidUpdate() {
+    Axios.get("https://pokeapi.co/api/v2/type").then(res =>
+      this.setState({ types: res.data.results })
     );
   }
   render() {
@@ -36,7 +43,10 @@ class App extends Component {
               </React.Fragment>
             </Route>
 
-            <Route path="/types" component={TypeList} />
+            <Route
+              path="/types"
+              render={props => <TypeList {...props} types={this.state.types} />}
+            />
           </div>
         </div>
       </Router>

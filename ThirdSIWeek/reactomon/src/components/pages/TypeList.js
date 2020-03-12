@@ -1,13 +1,15 @@
 import React, { Component } from "react";
+import Type from "../Type";
+import PropTypes from "prop-types";
 
 export class TypeList extends Component {
   render() {
-    return (
-      <React.Fragment>
-        <h1>Here goes the list of types</h1>
-      </React.Fragment>
-    );
+    return this.props.types.map(type => <Type type={type} />);
   }
 }
+
+TypeList.propTypes = {
+  types: PropTypes.array.isRequired
+};
 
 export default TypeList;
