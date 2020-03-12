@@ -5,6 +5,7 @@ import "./App.css";
 import PokemonList from "./components/pages/PokemonList";
 import TypeList from "./components/pages/TypeList";
 import Axios from "axios";
+import PokemonDetail from "./components/pages/PokemonDetail";
 
 class App extends Component {
   state = {
@@ -46,6 +47,12 @@ class App extends Component {
             <Route
               path="/types"
               render={props => <TypeList {...props} types={this.state.types} />}
+            />
+            <Route
+              path="/bulbasaur"
+              render={props => (
+                <PokemonDetail {...props} pokemons={this.state.pokemons} />
+              )}
             />
           </div>
         </div>
