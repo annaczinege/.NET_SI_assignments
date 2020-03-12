@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export class PokemonList extends Component {
   render() {
     return this.props.pokemons.map(pokemon => (
-      <div className="pokemon-names">
+      <div className="pokemon-names card">
         <Pokemon pokemon={pokemon} />
       </div>
     ));

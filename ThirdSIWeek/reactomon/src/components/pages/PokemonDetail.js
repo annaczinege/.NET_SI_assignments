@@ -11,8 +11,14 @@ export class PokemonDetail extends Component {
     moves: [],
     name: "",
     types: [],
-    stats: []
+    stats: [],
+    sprites: {},
+    weight: 0
   };
+
+  Capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
   componentDidMount() {
     Axios.get(`${this.props.location.state.url}`).then(res =>
@@ -25,17 +31,21 @@ export class PokemonDetail extends Component {
         name: res.data.name,
         moves: res.data.moves,
         types: res.data.types,
-        stats: res.data.stats
+        stats: res.data.stats,
+        sprites: res.data.sprites,
+        weight: res.data.weight
       })
     );
   }
+
   render() {
     return (
-      <div>
-        <div>ID: {this.state.id}</div>
-        <div>Name: {this.state.name}</div>
+      <div className="card">
+        <img src={`${this.state.sprites.front_default}`} alt="new"></img>
+        <div>Name: {this.Capitalize(this.state.name)}</div>
         <div>Height: {this.state.height}</div>
         <div>Experience: {this.state.base_experience}</div>
+        <div>Weight: {this.state.weight}</div>
       </div>
     );
   }

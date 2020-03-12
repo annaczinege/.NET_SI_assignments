@@ -6,6 +6,7 @@ import PokemonList from "./components/pages/PokemonList";
 import TypeList from "./components/pages/TypeList";
 import Axios from "axios";
 import PokemonDetail from "./components/pages/PokemonDetail";
+//import styled from "styled-components";
 
 class App extends Component {
   state = {
