@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export class TypeList extends Component {
   render() {
-    return this.props.types.map(type => <Type type={type} />);
+    return this.props.types.map(type => <Type key={type.id} type={type} />);
   }
 }
 

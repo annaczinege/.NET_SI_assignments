@@ -48,12 +48,7 @@ class App extends Component {
               path="/types"
               render={props => <TypeList {...props} types={this.state.types} />}
             />
-            <Route
-              path="/bulbasaur"
-              render={props => (
-                <PokemonDetail {...props} pokemons={this.state.pokemons} />
-              )}
-            />
+            <Route path="/pokemon/" component={PokemonDetail} />
           </div>
         </div>
       </Router>

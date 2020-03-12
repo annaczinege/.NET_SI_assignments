@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { Route } from "react-router-dom";
-import PokemonDetail from "./pages/PokemonDetail";
 
 export class Pokemon extends Component {
   render() {
@@ -11,17 +9,14 @@ export class Pokemon extends Component {
       <div>
         <Link
           to={{
-            pathname: `/${this.props.pokemon.name}`
+            pathname: `/pokemon/${this.props.pokemon.name}`,
+            state: {
+              url: this.props.pokemon.url
+            }
           }}
         >
           {name}
         </Link>
-        <Route
-          path="/bulbasaur"
-          render={props => (
-            <PokemonDetail {...props} pokemon={this.props.pokemon} />
-          )}
-        />
       </div>
     );
   }
