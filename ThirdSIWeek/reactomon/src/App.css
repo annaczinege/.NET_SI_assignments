@@ -16,6 +16,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  letter-spacing: 2px;
 }
 
 body {
@@ -87,6 +88,7 @@ a:hover {
 .pokemon-detail {
   text-align: center;
   padding: 15px;
+  font-size: 18px;
   margin-right: 25px;
   margin-left: 25px;
   margin-bottom: 50px;
