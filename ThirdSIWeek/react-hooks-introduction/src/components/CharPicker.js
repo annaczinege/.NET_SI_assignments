@@ -7,7 +7,7 @@ const CharPicker = props => {
   const [loadedChars, setLoadedChars] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  useHttp("https://swapi.co/api/people", []);
+  const [isLoading, data] = useHttp("https://swapi.co/api/people", []);
 
   let content = <p>Loading characters...</p>;
 
