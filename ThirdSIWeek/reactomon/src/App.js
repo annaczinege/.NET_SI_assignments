@@ -35,15 +35,13 @@ const App = () => {
         <div className="container">
           <Navbar />
 
-          <div className="card-container row">
+          <div className="card-container">
             <Route
               exact
               path="/"
               render={props => (
                 <React.Fragment>
-                  <div className="col-sm-11">
-                    <PokemonList pokemons={pokemons} />
-                  </div>
+                  <PokemonList pokemons={pokemons} />
                 </React.Fragment>
               )}
             ></Route>

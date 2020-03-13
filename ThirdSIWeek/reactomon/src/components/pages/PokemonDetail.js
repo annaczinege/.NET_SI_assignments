@@ -44,17 +44,23 @@ export const PokemonDetail = props => {
   });
 
   return (
-    <div className="card">
-      <div>#{id}</div>
-      <img src={`${sprites.front_default}`} alt="new"></img>
-      <div>Name: {Capitalize(name)}</div>
-      <div>Height: {height}</div>
-      <div>Weight: {weight}</div>
-      <div>Experience: {experience}</div>
-      <h3>Types:</h3>
-      <ul>{types}</ul>
-      <h3>Abilities:</h3>
-      <ul>{abilities}</ul>
+    <div className="">
+      <div className="card pokemon-detail">
+        <div>#{id}</div>
+        <img src={`${sprites.front_default}`} alt="new"></img>
+        <div>Name: {Capitalize(name)}</div>
+        <p></p>
+        <div>Height: {height}</div>
+        <div>Weight: {weight}</div>
+        <div>Experience: {experience}</div>
+        <p></p>
+      </div>
+      <div className="card pokemon-detail">
+        <h3>Types:</h3>
+        <ul>{types}</ul>
+        <h3>Abilities:</h3>
+        <ul>{abilities}</ul>
+      </div>
     </div>
   );
 };

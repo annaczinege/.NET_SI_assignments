@@ -59,6 +59,7 @@ header {
 
 .link-section {
   padding-top: 40px;
+  font-size: 28px;
 }
 
 a {
@@ -72,12 +73,23 @@ a:hover {
 
 /* Add some padding inside the card container */
 .card-container {
-  padding: 2px 16px;
+  align-items: center;
+  padding-top: 60px;
 }
 
 .pokemon-names {
-  margin-right: 20px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+
+.pokemon-detail {
+  text-align: center;
+  padding: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 50px;
 }
 
 .card {
