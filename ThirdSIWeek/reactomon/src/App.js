@@ -6,7 +6,8 @@ import PokemonList from "./components/pages/PokemonList";
 import TypeList from "./components/pages/TypeList";
 import Axios from "axios";
 import PokemonDetail from "./components/pages/PokemonDetail";
-//import styled from "styled-components";
+import Container from "./components/elements/Container";
+import { ThemeProvider } from "styled-components";
 
 const App = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -31,34 +32,32 @@ const App = () => {
 
   return (
     <Router>
-      <div className="App">
-        <div className="container">
-          <Navbar />
+      <Container className="container">
+        <Navbar />
 
-          <div className="card-container">
-            <Route
-              exact
-              path="/"
-              render={props => (
-                <React.Fragment>
-                  <PokemonList pokemons={pokemons} />
-                </React.Fragment>
-              )}
-            ></Route>
-            <Route path="/pokemons">
+        <div className="card-container">
+          <Route
+            exact
+            path="/"
+            render={props => (
               <React.Fragment>
                 <PokemonList pokemons={pokemons} />
               </React.Fragment>
-            </Route>
+            )}
+          ></Route>
+          <Route path="/pokemons">
+            <React.Fragment>
+              <PokemonList pokemons={pokemons} />
+            </React.Fragment>
+          </Route>
 
-            <Route
-              path="/types"
-              render={props => <TypeList {...props} types={types} />}
-            />
-            <Route path="/pokemon/" component={PokemonDetail} />
-          </div>
+          <Route
+            path="/types"
+            render={props => <TypeList {...props} types={types} />}
+          />
+          <Route path="/pokemon/" component={PokemonDetail} />
         </div>
-      </div>
+      </Container>
     </Router>
   );
 };

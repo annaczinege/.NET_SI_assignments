@@ -41,10 +41,6 @@ body {
   text-decoration: none;
 }
 
-.container {
-  text-align: center;
-}
-
 header {
   text-align: center;
   font-family: Pokemon-Solid;
@@ -72,7 +68,6 @@ a:hover {
   color: red;
 }
 
-/* Add some padding inside the card container */
 .card-container {
   align-items: center;
   padding-top: 60px;
