@@ -7,7 +7,6 @@ import TypeList from "./components/pages/TypeList";
 import Axios from "axios";
 import PokemonDetail from "./components/pages/PokemonDetail";
 import Container from "./components/elements/Container";
-import { ThemeProvider } from "styled-components";
 
 const App = () => {
   const [pokemons, setPokemons] = useState([]);
