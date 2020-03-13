@@ -1,12 +1,13 @@
 import React from "react";
 import Pokemon from "../Pokemon";
 import PropTypes from "prop-types";
+import Card from "../elements/Card";
 
 export const PokemonList = props => {
   return props.pokemons.map(pokemon => (
-    <div className="pokemon-names card">
+    <Card className="pokemon-names">
       <Pokemon pokemon={pokemon} />
-    </div>
+    </Card>
   ));
 };
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
+import Card from "../elements/Card";
 
 export const PokemonDetail = props => {
   const [pokeAbilities, setPokeAbilities] = useState([]);
@@ -45,7 +46,7 @@ export const PokemonDetail = props => {
 
   return (
     <div className="">
-      <div className="card pokemon-detail">
+      <Card className="pokemon-detail">
         <div>#{id}</div>
         <img src={`${sprites.front_default}`} alt="new"></img>
         <div>Name: {Capitalize(name)}</div>
@@ -54,13 +55,13 @@ export const PokemonDetail = props => {
         <div>Weight: {weight}</div>
         <div>Experience: {experience}</div>
         <p></p>
-      </div>
-      <div className="card pokemon-detail">
+      </Card>
+      <Card className="pokemon-detail">
         <h3>Types:</h3>
         <ul>{types}</ul>
         <h3>Abilities:</h3>
         <ul>{abilities}</ul>
-      </div>
+      </Card>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Axios from "axios";
+import Card from "./elements/Card";
 
 export const Pokemon = props => {
   const [imgUrl, setImgUrl] = useState("");
@@ -24,7 +25,7 @@ export const Pokemon = props => {
   let name = props.pokemon.name;
   name = Capitalize(name);
   return (
-    <div className="card">
+    <Card>
       <img src={`${imgUrl}`} alt=""></img>
       <div>
         <Link
@@ -38,7 +39,7 @@ export const Pokemon = props => {
           {name}
         </Link>
       </div>
-    </div>
+    </Card>
   );
 };
 
