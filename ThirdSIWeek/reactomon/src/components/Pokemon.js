@@ -25,7 +25,7 @@ export class Pokemon extends Component {
     return (
       <div className="card">
         <img src={`${this.state.front_default}`} alt=""></img>
-        <div className="card-container">
+        <div>
           <Link
             to={{
               pathname: `/pokemon/${this.props.pokemon.name}`,

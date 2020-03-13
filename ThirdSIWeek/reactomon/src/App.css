@@ -44,10 +44,6 @@ body {
   text-align: center;
 }
 
-.pokemon-names:hover {
-  color: red;
-}
-
 header {
   text-align: center;
   font-family: Pokemon-Solid;
@@ -67,6 +63,10 @@ header {
 a {
   text-decoration: none;
   color: #333;
+}
+
+a:hover {
+  color: red;
 }
 
 .card {

@@ -30,26 +30,30 @@ class App extends Component {
         <div className="App">
           <div className="container">
             <Navbar />
-            <Route
-              exact
-              path="/"
-              render={props => (
+            <div className="card-container">
+              <Route
+                exact
+                path="/"
+                render={props => (
+                  <React.Fragment>
+                    <PokemonList pokemons={this.state.pokemons} />
+                  </React.Fragment>
+                )}
+              ></Route>
+              <Route path="/pokemons">
                 <React.Fragment>
                   <PokemonList pokemons={this.state.pokemons} />
                 </React.Fragment>
-              )}
-            ></Route>
-            <Route path="/pokemons">
-              <React.Fragment>
-                <PokemonList pokemons={this.state.pokemons} />
-              </React.Fragment>
-            </Route>
+              </Route>
 
-            <Route
-              path="/types"
-              render={props => <TypeList {...props} types={this.state.types} />}
-            />
-            <Route path="/pokemon/" component={PokemonDetail} />
+              <Route
+                path="/types"
+                render={props => (
+                  <TypeList {...props} types={this.state.types} />
+                )}
+              />
+              <Route path="/pokemon/" component={PokemonDetail} />
+            </div>
           </div>
         </div>
       </Router>
