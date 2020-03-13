@@ -28,16 +28,16 @@ body {
   color: green;
   line-height: 1.4;
   text-decoration: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
+  padding: 20px;
+  border: 3rem, dotted;
   background-color: whitesmoke;
-  border-radius: 40%;
+  border-radius: 50%;
   margin-top: 30px;
 }
 
 .header-link:hover {
   color: red;
+  text-decoration: none;
 }
 
 .container {
@@ -54,6 +54,7 @@ header {
 
 .header-title {
   line-height: 20px;
+  padding-top: 120px;
 }
 
 .link-section {
@@ -69,20 +70,23 @@ a:hover {
   color: red;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  display: inline-block;
-  background-color: whitesmoke;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 /* Add some padding inside the card container */
 .card-container {
   padding: 2px 16px;
+}
+
+.pokemon-names {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
 }

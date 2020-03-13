@@ -4,12 +4,8 @@ import PropTypes from "prop-types";
 
 export const PokemonList = props => {
   return props.pokemons.map(pokemon => (
-    <div className="row">
-      <div className="col-sm-3">
-        <div className="pokemon-names card">
-          <Pokemon pokemon={pokemon} />
-        </div>
-      </div>
+    <div className="pokemon-names card">
+      <Pokemon pokemon={pokemon} />
     </div>
   ));
 };
