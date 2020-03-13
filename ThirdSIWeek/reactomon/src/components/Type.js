@@ -1,16 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-export class Type extends Component {
-  render() {
-    const { name } = this.props.type;
-    return (
-      <div>
-        <p>{name}</p>
-      </div>
-    );
-  }
-}
+export const Type = props => {
+  const { name } = props.type;
+  return (
+    <div>
+      <p>{name}</p>
+    </div>
+  );
+};
 
 Type.propTypes = {
   type: PropTypes.object.isRequired
