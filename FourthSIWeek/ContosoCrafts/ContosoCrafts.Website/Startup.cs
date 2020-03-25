@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ContosoCrafts.Website.Services;
+using System.Text.Json;
+using ContosoCrafts.Website.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace ContosoCrafts.Website
 {
@@ -25,6 +28,8 @@ namespace ContosoCrafts.Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            // tell ASP.Net that Contollers are a thing
+            services.AddControllers();
             // not singleton but comes and goes
             services.AddTransient<JsonFileProductService>();
         }
@@ -53,6 +58,15 @@ namespace ContosoCrafts.Website
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                // using the controller
+                endpoints.MapControllers();
+
+                //endpoints.MapGet("/products", (context) => 
+                //{
+                //    var products = app.ApplicationServices.GetService<JsonFileProductService>().GetProducts();
+                //    var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
+                //    return context.Response.WriteAsync(json);
+                //});
             });
         }
     }
