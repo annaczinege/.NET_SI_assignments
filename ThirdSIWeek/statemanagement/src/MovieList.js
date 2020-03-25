@@ -4,6 +4,7 @@ import { MovieContext } from "./MovieContext";
 
 const MovieList = () => {
   const [movies, setMovies] = useContext(MovieContext);
+
   return (
     <div>
       {movies.map(movie => (
