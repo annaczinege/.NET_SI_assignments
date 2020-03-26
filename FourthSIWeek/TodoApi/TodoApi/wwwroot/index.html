@@ -1,44 +1,49 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="en" data-framework="es6">
 <head>
-    <meta charset="UTF-8">
-    <title>To-do CRUD</title>
-    <link rel="stylesheet" href="css/site.css" />
+    <meta charset="utf-8">
+    <title>ES6 • TodoMVC</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <h1>To-do CRUD</h1>
-    <h3>Add</h3>
-    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New to-do">
-        <input type="submit" value="Add">
-    </form>
+    <section class="todoapp">
+        <header>
+            <h1>todos</h1>
+            <input class="new-todo" placeholder="What needs to be done?" autofocus>
+        </header>
+        <section style="display:none" class="main">
+            <input class="toggle-all" type="checkbox">
+            <ul class="todo-list"></ul>
+        </section>
+        <footer class="footer">
+            <span class="todo-count"></span>
+            <div class="filters">
+                <a href='javascript:' id="filter_all" class="selected">All</a>
+                <a href='javascript:' id="filter_active">Active</a>
+                <a href='javascript:' id="filter_completed">Completed</a>
+            </div>
+            <button class="clear-completed">Clear completed</button>
+        </footer>
+        
+    </section>
+    <footer class="info">
+        <p>Double-click to edit a todo</p>
+        <p>Based on <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
 
-    <div id="editForm">
-        <h3>Edit</h3>
-        <form action="javascript:void(0);" onsubmit="updateItem()">
-            <input type="hidden" id="edit-id">
-            <input type="checkbox" id="edit-isComplete">
-            <input type="text" id="edit-name">
-            <input type="submit" value="Save">
-            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
-        </form>
-    </div>
+    <!-- JavaScript -->
+    <script src="js/controller.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/app.js"></script>
 
-    <p id="counter"></p>
+    <!-- templates -->
+    <template id="todoListItemTemplate">
+        <li>
+            <input class="toggle" type="checkbox">
+            <label></label>
+            <button class="destroy"></button>
+        </li>
+    </template>
 
-    <table>
-        <tr>
-            <th>Is Complete?</th>
-            <th>Name</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tbody id="todos"></tbody>
-    </table>
-
-    <script src="js/site.js" asp-append-version="true"></script>
-    <script type="text/javascript">
-        getItems();
-    </script>
 </body>
 </html>
