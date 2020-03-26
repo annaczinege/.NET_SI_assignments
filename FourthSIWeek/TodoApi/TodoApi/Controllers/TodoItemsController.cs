@@ -185,6 +185,42 @@ namespace TodoApi.Controllers
             return NoContent();
         }
 
+        [HttpPost("toggle_all")]
+        public async Task<ActionResult<IEnumerable<TodoItem>>> ToggleAllCompletedStatus()
+        {
+            var todoItems = await _context.TodoItems.ToListAsync();
+            bool currentStatusOfAll = false;
+
+            if (!currentStatusOfAll)
+            {
+                foreach (var todoItem in todoItems)
+                {
+                    if (!todoItem.IsComplete)
+                    {
+                        todoItem.IsComplete = true;
+
+                    }
+
+                }
+                currentStatusOfAll = true;
+            } else
+            {
+                foreach (var todoItem in todoItems)
+                {
+                    if (todoItem.IsComplete)
+                    {
+                        todoItem.IsComplete = false;
+
+                    }
+                }
+                currentStatusOfAll = false;
+            }
+            
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
         private bool TodoItemExists(long id)
         {
             return _context.TodoItems.Any(e => e.Id == id);
