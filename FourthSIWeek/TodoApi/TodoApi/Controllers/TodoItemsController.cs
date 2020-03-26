@@ -167,6 +167,24 @@ namespace TodoApi.Controllers
             return todoItems;
         }
 
+        [HttpPost("{id}/toggle_status")]
+        public async Task<ActionResult<TodoItem>> ToggleItemCompletedStatus(long id)
+        {
+           var todoItem = await _context.TodoItems.FindAsync(id);
+            if(todoItem.IsComplete == true)
+            {
+                todoItem.IsComplete = false;
+            }
+            else
+            {
+                todoItem.IsComplete = true;
+            }
+
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
         private bool TodoItemExists(long id)
         {
             return _context.TodoItems.Any(e => e.Id == id);
