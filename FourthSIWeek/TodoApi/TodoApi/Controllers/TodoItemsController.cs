@@ -191,8 +191,6 @@ namespace TodoApi.Controllers
             var todoItems = await _context.TodoItems.ToListAsync();
             int itemNumber = todoItems.Count();
             int counter = 0;
-            bool currentStatus;
-
 
             foreach (var todoItem in todoItems)
             {
@@ -201,15 +199,18 @@ namespace TodoApi.Controllers
                     counter++;
                 }
             }
-            if (counter < itemNumber)
+
+            if (counter <= itemNumber && counter != 0)
             {
+                Console.WriteLine("not all completed");
                 foreach (var item in todoItems)
                 {
                     item.IsComplete = true;
                 }
             }
-            else if (counter == itemNumber)
+            else if (counter == 0)
             {
+                Console.WriteLine("all completed");
                 foreach (var item in todoItems)
                 {
                     item.IsComplete = false;
