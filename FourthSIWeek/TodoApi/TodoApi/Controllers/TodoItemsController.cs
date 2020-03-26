@@ -161,7 +161,7 @@ namespace TodoApi.Controllers
                     _context.TodoItems.Remove(todoItem);
                 }
             }
-            
+
             await _context.SaveChangesAsync();
 
             return todoItems;
@@ -170,8 +170,8 @@ namespace TodoApi.Controllers
         [HttpPost("{id}/toggle_status")]
         public async Task<ActionResult<TodoItem>> ToggleItemCompletedStatus(long id)
         {
-           var todoItem = await _context.TodoItems.FindAsync(id);
-            if(todoItem.IsComplete == true)
+            var todoItem = await _context.TodoItems.FindAsync(id);
+            if (todoItem.IsComplete == true)
             {
                 todoItem.IsComplete = false;
             }
@@ -189,33 +189,33 @@ namespace TodoApi.Controllers
         public async Task<ActionResult<IEnumerable<TodoItem>>> ToggleAllCompletedStatus()
         {
             var todoItems = await _context.TodoItems.ToListAsync();
-            bool currentStatusOfAll = false;
+            int itemNumber = todoItems.Count();
+            int counter = 0;
+            bool currentStatus;
 
-            if (!currentStatusOfAll)
+
+            foreach (var todoItem in todoItems)
             {
-                foreach (var todoItem in todoItems)
+                if (todoItem.IsComplete == false)
                 {
-                    if (!todoItem.IsComplete)
-                    {
-                        todoItem.IsComplete = true;
-
-                    }
-
+                    counter++;
                 }
-                currentStatusOfAll = true;
-            } else
-            {
-                foreach (var todoItem in todoItems)
-                {
-                    if (todoItem.IsComplete)
-                    {
-                        todoItem.IsComplete = false;
-
-                    }
-                }
-                currentStatusOfAll = false;
             }
-            
+            if (counter < itemNumber)
+            {
+                foreach (var item in todoItems)
+                {
+                    item.IsComplete = true;
+                }
+            }
+            else if (counter == itemNumber)
+            {
+                foreach (var item in todoItems)
+                {
+                    item.IsComplete = false;
+                }
+            }
+
             await _context.SaveChangesAsync();
 
             return NoContent();
