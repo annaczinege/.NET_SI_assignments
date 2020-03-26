@@ -1,0 +1,7 @@
+StockTrader/bin/*
+StockTrader/obj/*
+StockTraderTests/bin/*
+StockTraderTests/obj/*
+packages/*
+.idea/*
+.vs/*

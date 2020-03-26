@@ -149,6 +149,24 @@ namespace TodoApi.Controllers
             return todoItem;
         }
 
+        // DELETE: api/todo/completed
+        [HttpDelete("completed")]
+        public async Task<ActionResult<IEnumerable<TodoItem>>> DeleteCompletedItems()
+        {
+            var todoItems = await _context.TodoItems.ToListAsync();
+            foreach (var todoItem in todoItems)
+            {
+                if (todoItem.IsComplete == true)
+                {
+                    _context.TodoItems.Remove(todoItem);
+                }
+            }
+            
+            await _context.SaveChangesAsync();
+
+            return todoItems;
+        }
+
         private bool TodoItemExists(long id)
         {
             return _context.TodoItems.Any(e => e.Id == id);
