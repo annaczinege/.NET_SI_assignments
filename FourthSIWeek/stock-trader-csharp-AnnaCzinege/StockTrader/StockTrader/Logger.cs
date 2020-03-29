@@ -3,21 +3,11 @@ using System.IO;
 
 namespace stockTrader
 {
-    public class Logger
+    public class Logger: ILogger
     {
 
-        private static Logger _instance;
-
-        public static Logger Instance
+        public Logger()
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new Logger();
-                }
-                return _instance;
-            }
         }
 
         public void Log(string message) {

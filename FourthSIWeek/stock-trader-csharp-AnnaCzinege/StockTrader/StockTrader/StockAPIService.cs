@@ -6,7 +6,7 @@ namespace stockTrader
     /// <summary>
     /// Stock price service that gets prices from a remote API
     /// </summary>
-    public class StockAPIService {
+    public class StockAPIService : IStockAPIService {
 
         private static string apiPath = "https://financialmodelingprep.com/api/v3/stock/real-time-price/{0}";
 	
