@@ -53,6 +53,16 @@ namespace stockTrader
         [Test] // readFromURL returned wrong JSON
         public void TestGetPriceMalformedResponse() 
         {
+            //Arrange
+            _symbol = "aapl";
+            _expectedPrice = 247.74;
+
+            //Act
+            _remoteURLReader.ReadFromUrl(String.Format(_apiPath, _symbol)).Returns("{\n  \"symbol\" : \"CHY\",\n  \"price\" : 8.41\n}");
+            _stockAPIService = new StockAPIService(_remoteURLReader);
+
+            //Assert
+            Assert.AreNotEqual(_expectedPrice, _stockAPIService.GetPrice(_symbol));
         }
     }
 }
