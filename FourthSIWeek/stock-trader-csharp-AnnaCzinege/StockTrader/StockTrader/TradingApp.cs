@@ -5,9 +5,21 @@ namespace stockTrader
 
 	internal class TradingApp
 	{
+		private readonly ILogger _logger;
+		private readonly ITrader _trader;
+
+		public TradingApp(ITrader trader, ILogger logger)
+		{
+			_trader = trader;
+			_logger = logger;
+		}
 		public static void Main(string[] args)
 		{
-			TradingApp app = new TradingApp();
+			IRemoteURLReader remoteURLReader = new RemoteURLReader();
+			IStockAPIService stockAPIService = new StockAPIService(remoteURLReader);
+			ILogger logger = new Logger();
+			ITrader trader = new Trader(stockAPIService, logger);
+			TradingApp app = new TradingApp(trader, logger);
 			app.Start();
 		}
 
@@ -24,19 +36,19 @@ namespace stockTrader
 
 			try
 			{
-				bool purchased = Trader.Instance.Buy(symbol, price);
+				bool purchased = _trader.Buy(symbol, price);
 				if (purchased)
 				{
-					Logger.Instance.Log("Purchased stock!");
+					_logger.Log("Purchased stock!");
 				}
 				else
 				{
-					Logger.Instance.Log("Couldn't buy the stock at that price.");
+					_logger.Log("Couldn't buy the stock at that price.");
 				}
 			}
 			catch (Exception e)
 			{
-				Logger.Instance.Log("There was an error while attempting to buy the stock: " + e.Message);
+				_logger.Log("There was an error while attempting to buy the stock: " + e.Message);
 			}
 			Console.ReadLine();
 		}

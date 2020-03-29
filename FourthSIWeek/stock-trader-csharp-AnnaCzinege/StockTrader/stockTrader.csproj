@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="StockTrader\ILogger.cs" />
+    <Compile Include="StockTrader\IRemoteURLReader.cs" />
     <Compile Include="StockTrader\IStockAPIService.cs" />
     <Compile Include="StockTrader\ITrader.cs" />
     <Compile Include="StockTrader\Logger.cs" />

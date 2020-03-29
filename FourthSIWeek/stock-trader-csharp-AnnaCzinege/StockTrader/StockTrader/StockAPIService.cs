@@ -6,11 +6,16 @@ namespace stockTrader
     /// <summary>
     /// Stock price service that gets prices from a remote API
     /// </summary>
-    public class StockAPIService
+    public class StockAPIService: IStockAPIService
     {
 
-        private static string apiPath = "https://financialmodelingprep.com/api/v3/stock/real-time-price/{0}";
+        private string _apiPath = "https://financialmodelingprep.com/api/v3/stock/real-time-price/{0}";
+        private IRemoteURLReader _remoteURLReader;
 
+        public StockAPIService(IRemoteURLReader remoteURLReader)
+        {
+            _remoteURLReader = remoteURLReader;
+        }
         /// <summary>
         /// Get stock price from iex
         /// </summary>
@@ -18,8 +23,8 @@ namespace stockTrader
         /// <returns>the stock price</returns>
         public double GetPrice(string symbol)
         {
-            string url = String.Format(apiPath, symbol);
-            string result = RemoteURLReader.ReadFromUrl(url);
+            string url = String.Format(_apiPath, symbol);
+            string result = _remoteURLReader.ReadFromUrl(url);
             var json = JObject.Parse(result);
             string price = json.GetValue("price").ToString();
             return double.Parse(price);
