@@ -13,14 +13,11 @@ namespace stockTrader
         [SetUp]
         public void Setup()
         {
-            _trader = new Trader(_stockAPI, _logger);
         }
 
         [Test] // Bid was lower than price, Buy() should return false.
         public void TestBidLowerThanPrice()
         {
-            _trader.Buy("$", 100).Returns(false);
-            Assert.That(_trader.Buy("$", 100), Is.EqualTo(false));
         }
 
         [Test] // bid was equal or higher than price, Buy() should return true.
