@@ -13,9 +13,9 @@ namespace Blog.Models
         {
             _useList = new List<User>()
             {
-                new User() { Id = 1, FirstName = "Mary", LastName = "Jane", Posts = new List<Post>() {new Post() { Id = 1, UserId = 1, Content = "MJ1"}, new Post() { Id = 2, UserId = 1, Content = "MJ2"} }},
-                new User() { Id = 2, FirstName = "Harry", LastName = "Potter", Posts = new List<Post>() {new Post() { Id = 3, UserId = 2, Content="HP1"}, new Post() { Id = 4, UserId = 2, Content="HP2"} }},
-                new User() { Id = 3, FirstName = "Eric", LastName = "Cartman", Posts = new List<Post>() {new Post() { Id = 5, UserId = 3, Content="EC1"}, new Post() { Id = 6, UserId = 3, Content="EC2"} }}
+                new User { Id = 1, FirstName = "Mary", LastName = "Jane", Posts = new List<Post>() {new Post { Id = 1, UserId = 1, Content = "MJ1"}, new Post { Id = 2, UserId = 1, Content = "MJ2"} }},
+                new User { Id = 2, FirstName = "Harry", LastName = "Potter", Posts = new List<Post>() {new Post { Id = 3, UserId = 2, Content="HP1"}, new Post { Id = 4, UserId = 2, Content="HP2"} }},
+                new User { Id = 3, FirstName = "Eric", LastName = "Cartman", Posts = new List<Post>() {new Post { Id = 5, UserId = 3, Content="EC1"}, new Post { Id = 6, UserId = 3, Content="EC2"} }}
             };
         }
         public User Add(User user)

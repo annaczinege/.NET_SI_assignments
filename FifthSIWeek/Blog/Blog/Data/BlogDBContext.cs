@@ -13,7 +13,9 @@ namespace Blog.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<User>().HasData(new User { Id=1, FirstName="Anna", LastName="Czinege"},
+                new User { Id = 2, FirstName = "Eszter", LastName = "Mázi" },
+                new User { Id = 3, FirstName = "Norbert", LastName = "Benkó" });
         }
 
     }
