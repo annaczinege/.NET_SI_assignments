@@ -1,0 +1,12 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\bin\Debug\netcoreapp3.1\AssemblyAttrDemo.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\bin\Debug\netcoreapp3.1\AssemblyAttrDemo.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\bin\Debug\netcoreapp3.1\AssemblyAttrDemo.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\bin\Debug\netcoreapp3.1\AssemblyAttrDemo.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\bin\Debug\netcoreapp3.1\AssemblyAttrDemo.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\bin\Debug\netcoreapp3.1\AssemblyAttrDemo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\obj\Debug\netcoreapp3.1\AssemblyAttrDemo.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\obj\Debug\netcoreapp3.1\AssemblyAttrDemo.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\obj\Debug\netcoreapp3.1\AssemblyAttrDemo.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\obj\Debug\netcoreapp3.1\AssemblyAttrDemo.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\obj\Debug\netcoreapp3.1\AssemblyAttrDemo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyAttrDemo\AssemblyAttrDemo\obj\Debug\netcoreapp3.1\AssemblyAttrDemo.genruntimeconfig.cache
