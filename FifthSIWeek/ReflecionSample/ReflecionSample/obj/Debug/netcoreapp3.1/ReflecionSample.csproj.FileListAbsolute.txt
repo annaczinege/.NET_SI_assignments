@@ -1,0 +1,12 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\bin\Debug\netcoreapp3.1\ReflecionSample.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\bin\Debug\netcoreapp3.1\ReflecionSample.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\bin\Debug\netcoreapp3.1\ReflecionSample.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\bin\Debug\netcoreapp3.1\ReflecionSample.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\bin\Debug\netcoreapp3.1\ReflecionSample.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\bin\Debug\netcoreapp3.1\ReflecionSample.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\obj\Debug\netcoreapp3.1\ReflecionSample.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\obj\Debug\netcoreapp3.1\ReflecionSample.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\obj\Debug\netcoreapp3.1\ReflecionSample.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\obj\Debug\netcoreapp3.1\ReflecionSample.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\obj\Debug\netcoreapp3.1\ReflecionSample.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\ReflecionSample\ReflecionSample\obj\Debug\netcoreapp3.1\ReflecionSample.genruntimeconfig.cache
