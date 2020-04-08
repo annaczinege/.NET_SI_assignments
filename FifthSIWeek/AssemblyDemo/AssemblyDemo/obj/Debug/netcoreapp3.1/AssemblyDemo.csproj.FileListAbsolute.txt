@@ -1,0 +1,12 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\bin\Debug\netcoreapp3.1\AssemblyDemo.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\bin\Debug\netcoreapp3.1\AssemblyDemo.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\bin\Debug\netcoreapp3.1\AssemblyDemo.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\bin\Debug\netcoreapp3.1\AssemblyDemo.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\bin\Debug\netcoreapp3.1\AssemblyDemo.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\bin\Debug\netcoreapp3.1\AssemblyDemo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\obj\Debug\netcoreapp3.1\AssemblyDemo.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\obj\Debug\netcoreapp3.1\AssemblyDemo.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\obj\Debug\netcoreapp3.1\AssemblyDemo.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\obj\Debug\netcoreapp3.1\AssemblyDemo.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\obj\Debug\netcoreapp3.1\AssemblyDemo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\AssemblyDemo\AssemblyDemo\obj\Debug\netcoreapp3.1\AssemblyDemo.genruntimeconfig.cache
