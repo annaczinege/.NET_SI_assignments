@@ -7,6 +7,8 @@ namespace Blog.Data
     {
         public BlogDBContext(DbContextOptions<BlogDBContext> options) : base(options) { }
 
+        public BlogDBContext() {}
+
         public DbSet<User> Users { get; set; }
 
         public DbSet<Post> Posts { get; set; }
