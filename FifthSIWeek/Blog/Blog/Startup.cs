@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Blog.Data;
+using Blog.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,8 @@ namespace Blog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<BlogDBContext>(option => { option.UseSqlServer(Configuration.GetConnectionString("Default")); });
-            services.AddControllersWithViews();
+            services.AddScoped<IUserRepository, SQLUserRepository>();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
