@@ -1,0 +1,12 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\bin\Debug\netcoreapp3.1\DynamicCodeDemo.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\bin\Debug\netcoreapp3.1\DynamicCodeDemo.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\bin\Debug\netcoreapp3.1\DynamicCodeDemo.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\bin\Debug\netcoreapp3.1\DynamicCodeDemo.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\bin\Debug\netcoreapp3.1\DynamicCodeDemo.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\bin\Debug\netcoreapp3.1\DynamicCodeDemo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\obj\Debug\netcoreapp3.1\DynamicCodeDemo.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\obj\Debug\netcoreapp3.1\DynamicCodeDemo.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\obj\Debug\netcoreapp3.1\DynamicCodeDemo.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\obj\Debug\netcoreapp3.1\DynamicCodeDemo.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\obj\Debug\netcoreapp3.1\DynamicCodeDemo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\FifthSIWeek\DynamicCodeDemo\DynamicCodeDemo\obj\Debug\netcoreapp3.1\DynamicCodeDemo.genruntimeconfig.cache
