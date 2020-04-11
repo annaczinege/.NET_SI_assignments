@@ -17,7 +17,7 @@ namespace DemoDynamic
             AppDomain domain = AppDomain.CurrentDomain;
 
             // Create the Assembly
-            AssemblyBuilder assemBldr = domain.De //domain.DefineDynamicAssembly(theName, AssemblyBuilderAccess.ReflectionOnly);
+            AssemblyBuilder assemBldr = domain.DefineDynamicAssembly(theName, AssemblyBuilderAccess.ReflectionOnly);
 
             // Define a module to hold our type
             ModuleBuilder modBldr = assemBldr.DefineDynamicModule("CodeModule",
