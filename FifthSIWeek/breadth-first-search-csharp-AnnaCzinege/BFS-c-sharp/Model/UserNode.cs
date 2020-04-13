@@ -15,7 +15,7 @@ namespace BFS_c_sharp.Model
             get { return _friends; }
         }
 
-        public bool IsVisited { get; set; }
+        public bool WasVisited { get; set; }
 
 
         public UserNode() { }
@@ -25,7 +25,7 @@ namespace BFS_c_sharp.Model
             Id = id;
             FirstName = firstName;
             LastName = lastName;
-            IsVisited = false;
+            WasVisited = false;
         }
 
         public void AddFriend(UserNode friend)

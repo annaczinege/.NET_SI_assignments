@@ -9,7 +9,7 @@ namespace BFS_c_sharp
 {
     public class InputValidator
     {
-        public int ValidateInputForMinimumDistance(string nextId, HashSet<int> ids)
+        public int ValidateInputForMinDistanceAndShortestPath(string nextId, HashSet<int> ids)
         {
             int id;
             do
