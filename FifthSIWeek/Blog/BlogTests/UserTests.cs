@@ -17,7 +17,7 @@ namespace BlogTests
         public void Add_writes_to_database()
         {
             var options = new DbContextOptionsBuilder<BlogDBContext>()
-                .UseInMemoryDatabase(databaseName: "Add_writes_to_database")
+                .UseInMemoryDatabase(databaseName: nameof(Add_writes_to_database))
                 .Options;
 
             // Run the test against one instance of the context
