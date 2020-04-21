@@ -1,0 +1,5 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\DerivativesCalculator\DerivativesCalculatorService\bin\Debug\DerivativesCalculatorService.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\DerivativesCalculator\DerivativesCalculatorService\bin\Debug\DerivativesCalculatorService.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\DerivativesCalculator\DerivativesCalculatorService\obj\Debug\DerivativesCalculatorService.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\DerivativesCalculator\DerivativesCalculatorService\obj\Debug\DerivativesCalculatorService.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\DerivativesCalculator\DerivativesCalculatorService\obj\Debug\DerivativesCalculatorService.pdb

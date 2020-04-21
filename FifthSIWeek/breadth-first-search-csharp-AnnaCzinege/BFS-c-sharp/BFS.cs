@@ -18,6 +18,13 @@ namespace BFS_c_sharp
             _users = users;
         }
 
+        /// <summary>
+        /// Receive minimum distance between two user in the network.
+        /// Using BFS algorithm.
+        /// </summary>
+        /// <param name="startNode"></param>
+        /// <param name="endNode"></param>
+        /// <returns></returns>
         public int GetMinimumDistance(UserNode startNode, UserNode endNode)
         {
             Dictionary<UserNode, int> checkingNodes = new Dictionary<UserNode, int>();
@@ -98,7 +105,6 @@ namespace BFS_c_sharp
                     }
                 }
             }
-
             int mindDist = checkingNodes[endNode];
             userNodes.Add(endNode);
             queueOfUsers.Enqueue(endNode);
