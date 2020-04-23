@@ -1,0 +1,16 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\BinarySearchTreeDojoTests.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\BinarySearchTreeDojoTests.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\BinarySearchTreeDojo.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\BinarySearchTreeDojo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\BinarySearchTreeDojo.exe.config
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\obj\Debug\BinarySearchTreeDojoTests.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\obj\Debug\BinarySearchTreeDojoTests.csproj.CopyComplete
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\obj\Debug\BinarySearchTreeDojoTests.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojoTests\obj\Debug\BinarySearchTreeDojoTests.pdb

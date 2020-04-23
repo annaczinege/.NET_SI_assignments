@@ -5,19 +5,20 @@ namespace BinarySearchTreeDojo
 {
     public class BinarySearchTree
     {
-        private BinarySearchTree()
+        private readonly List<int> _treeElements;
+        private BinarySearchTree(List<int> intList)
         {
-            // private constructor so it can't be instantiated like this
+            _treeElements = intList;
         }
 
         public static BinarySearchTree Build(List<int> elements)
         {
-            // TODO construct a binary search tree here
-            return null;
+            BinarySearchTree tree = new BinarySearchTree(elements);
+            return tree;
         }
     
         public Boolean Search(int toFind) {
-            // TODO return true if the element has been found, false if its not in the tree.
+            
             return false;
         }
 

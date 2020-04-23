@@ -1,0 +1,6 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojo\bin\Debug\BinarySearchTreeDojo.exe.config
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojo\bin\Debug\BinarySearchTreeDojo.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojo\bin\Debug\BinarySearchTreeDojo.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojo\obj\Debug\BinarySearchTreeDojo.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojo\obj\Debug\BinarySearchTreeDojo.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\binary-search-trees-csharp-AnnaCzinege\BinarySearchTreeDojo\obj\Debug\BinarySearchTreeDojo.pdb

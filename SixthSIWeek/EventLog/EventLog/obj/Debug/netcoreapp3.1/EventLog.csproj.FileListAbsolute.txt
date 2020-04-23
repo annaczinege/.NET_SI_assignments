@@ -1,0 +1,15 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\EventLog.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\obj\Debug\netcoreapp3.1\EventLog.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\obj\Debug\netcoreapp3.1\EventLog.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\obj\Debug\netcoreapp3.1\EventLog.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\EventLog.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\EventLog.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\EventLog.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\EventLog.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\EventLog.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\System.Diagnostics.EventLog.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\obj\Debug\netcoreapp3.1\EventLog.csproj.CopyComplete
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\obj\Debug\netcoreapp3.1\EventLog.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\obj\Debug\netcoreapp3.1\EventLog.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\SixthSIWeek\EventLog\EventLog\obj\Debug\netcoreapp3.1\EventLog.genruntimeconfig.cache
