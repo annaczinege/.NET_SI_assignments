@@ -12,7 +12,14 @@ namespace Codecool.LinkedListDojo
         /// <param name="data"></param>
         public void Append(T data)
         {
-            throw new NotImplementedException();
+            if (_head == null)
+            {
+                _head = new Node<T>(data);
+            }
+            else
+            {
+                _head.AddToEnd(data);
+            }
         }
 
         /// <summary>

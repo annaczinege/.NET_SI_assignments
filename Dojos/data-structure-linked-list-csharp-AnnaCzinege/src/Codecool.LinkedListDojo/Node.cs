@@ -10,6 +10,18 @@
             Data = data;
         }
 
+        public void AddToEnd(T data)
+        {
+            if (Next == null)
+            {
+                Next = new Node<T>(data);
+            }
+            else
+            {
+                Next.AddToEnd(data);
+            }
+        }
+
         public override string ToString()
         {
             return Data.ToString();
