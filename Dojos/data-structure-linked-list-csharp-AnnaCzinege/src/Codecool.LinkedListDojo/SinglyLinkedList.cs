@@ -73,11 +73,8 @@ namespace Codecool.LinkedListDojo
 
             while (node != null && counter != index)
             {
-                if (counter != index)
-                {
-                    node = node.Next;
-                    counter++;
-                }
+                node = node.Next;
+                counter++;
             }
 
             if ( counter != index)
