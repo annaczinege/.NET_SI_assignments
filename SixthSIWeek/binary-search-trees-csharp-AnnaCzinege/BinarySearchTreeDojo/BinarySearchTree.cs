@@ -68,11 +68,6 @@ namespace BinarySearchTreeDojo
 
         private Node BuildTree(List<int> listOfNumbers, int startIndex, int endIndex)
         {
-            if (startIndex > endIndex)
-            {
-                return null;
-            }
-
             int midIndex = (startIndex + endIndex) / 2;
             Node node = new Node(listOfNumbers[midIndex]);
 

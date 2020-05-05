@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyName>Codecool.LinkedListDojo</AssemblyName>
+    <RootNamespace>Codecool.LinkedListDojo</RootNamespace>
+    <CodeAnalysisRuleSet>..\Codecool.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+</Project>
