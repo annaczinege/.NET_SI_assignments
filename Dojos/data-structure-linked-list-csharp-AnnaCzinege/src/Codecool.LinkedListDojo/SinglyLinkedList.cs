@@ -5,6 +5,10 @@ namespace Codecool.LinkedListDojo
     public class SinglyLinkedList<T>
     {
         private Node<T> _head;
+        //private int _length = 0;
+        // I could use this private field to count length,
+        // But here I have the GetLength method for it.
+        // Similarly I could have a private field to the tail but I have a method for that.
 
         /// <summary>
         /// Add a new element to the LinkedList. The new element is appended to the current last item.
@@ -30,7 +34,26 @@ namespace Codecool.LinkedListDojo
         /// <param name="data"></param>
         public void Insert(int index, T data)
         {
-            throw new NotImplementedException();
+            Node<T> currentNodeOnIndex = GetItem(index);
+            Node<T> currentNodeOnPrevIndex = GetItem(index - 1);
+
+            if (currentNodeOnIndex == null)
+            {
+                _head = new Node<T>(data);
+            }
+            else if (currentNodeOnIndex == _head)
+            {
+                Node<T> temp = new Node<T>(data);
+                temp.Next = currentNodeOnIndex;
+                _head = temp;
+            }
+            else
+            {
+                Node<T> temp = new Node<T>(data);
+                temp.Next = currentNodeOnIndex;
+                currentNodeOnPrevIndex.Next = temp;
+            }
+
         }
 
         /// <summary>
@@ -40,7 +63,41 @@ namespace Codecool.LinkedListDojo
         /// <returns></returns>
         public Node<T> GetItem(int index)
         {
-            throw new NotImplementedException();
+            int counter = 0;
+            Node<T> node = _head;
+
+            if (index < 0)
+            {
+                return GetTail();
+            }
+
+            while (node != null && counter != index)
+            {
+                if (counter != index)
+                {
+                    node = node.Next;
+                    counter++;
+                }
+            }
+
+            if ( counter != index)
+            {
+                return null;
+            }
+
+            return node;
+        }
+
+        private Node<T> GetTail()
+        {
+            Node<T> node = _head;
+
+            while (node != null)
+            {
+                node = node.Next;
+            }
+
+            return node;
         }
 
         /// <summary>
@@ -49,7 +106,16 @@ namespace Codecool.LinkedListDojo
         /// <returns>Amount of elements</returns>
         public int GetLength()
         {
-            throw new NotImplementedException();
+            int length = 0;
+            Node<T> node = _head;
+
+            while (node != null)
+            {
+                node = node.Next;
+                length++;
+            }
+
+            return length;
         }
 
         /// <summary>
@@ -59,25 +125,21 @@ namespace Codecool.LinkedListDojo
         /// <param name="index"></param>
         public void Remove(int index)
         {
-            if (index == 0)
+            Node<T> currentNodeOnIndex = GetItem(index);
+            Node<T> currentNodeOnPrevIndex = GetItem(index - 1);
+
+            if (currentNodeOnIndex == null)
+            {
+                throw new IndexOutOfRangeException("Tried to remove an invalid item!");
+            }
+            else if (currentNodeOnIndex == _head)
             {
                 _head = _head.Next;
-                return;
             }
-
-            var currentNode = _head;
-            var counter = 0;
-            while (counter < index - 1)
+            else
             {
-                currentNode = currentNode.Next;
-                ++counter;
-
-                if (currentNode.Next == null)
-                {
-                    throw new IndexOutOfRangeException("Tried to remove an invalid item!");
-                }
+                currentNodeOnPrevIndex.Next = currentNodeOnIndex.Next;
             }
-            currentNode.Next = currentNode.Next.Next;
         }
 
         /// <summary>

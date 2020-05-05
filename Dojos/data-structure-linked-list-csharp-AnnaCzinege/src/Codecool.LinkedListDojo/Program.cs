@@ -11,6 +11,8 @@ namespace Codecool.LinkedListDojo
             singlyLinkedList.Append(5);
             singlyLinkedList.Append(7);
             singlyLinkedList.Append(11);
+            singlyLinkedList.Insert(2, 42);
+            Console.WriteLine(singlyLinkedList.ToString());
             Console.ReadKey();
         }
     }
