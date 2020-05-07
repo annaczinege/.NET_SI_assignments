@@ -18,16 +18,11 @@ class MyHashMap<K, V>
 {
     private const int bucketSize = 16;
 
-    // This holds all the data. Its a primitive array where every element is a Linked List.
-    // They Linked List holds elements of type KeyValue
     private readonly LinkedList<KeyValue<K, V>>[] elements = new LinkedList<KeyValue<K, V>>[bucketSize];
 
 
     private int GetPositionByHash(K key)
     {
-        // This function converts somehow the key to an integer between 0 and bucketSize
-        // In Java, hashCode() is a function of Object, so all non-primitive types
-        // can easily be converted to an integer.
         if (key.Equals(null))
         {
             throw new ArgumentNullException();
@@ -41,13 +36,9 @@ class MyHashMap<K, V>
 
     public void Put(K key, V value)
     {
-
-        // Find out which position of the elements array to use:
         int position = GetPositionByHash(key);
         bool keyAlreadyExists = false;
 
-        // If the key already exists, replace the old value with the new.
-        // Make a new instance of the KeyValue class, fill it with the key, value parameters, then add it to the list.
         KeyValue<K, V> itemToAdd = new KeyValue<K, V>(key, value);
 
         if (elements[position] != null)
@@ -77,10 +68,6 @@ class MyHashMap<K, V>
 
     public V Get(K key)
     {
-        // 1. Calculate the hash of the key. This defines which element to get from the "elements" array
-        // 2. Find in the List in this position the KeyValue element that has this key, then return its value.
-        //    If none of the items in the list has this key, throw exception.
-
         int hashCode = key.GetHashCode();
         hashCode = (hashCode) ^ (hashCode >> bucketSize);
         int index = hashCode & (bucketSize - 1);
@@ -101,7 +88,6 @@ class MyHashMap<K, V>
 
     public void Clear()
     {
-        // Make the elements array empty
         foreach (var element in elements)
         {
             if (element != null)
@@ -113,8 +99,6 @@ class MyHashMap<K, V>
 
     public V Remove(K key)
     {
-        // If key not found, throw an exception
-
         int index = GetPositionByHash(key);
         if (elements[index] != null)
         {
