@@ -1,0 +1,12 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\obj\Debug\netcoreapp3.1\myTrie.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\obj\Debug\netcoreapp3.1\myTrie.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\obj\Debug\netcoreapp3.1\myTrie.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\bin\Debug\netcoreapp3.1\myTrie.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\bin\Debug\netcoreapp3.1\myTrie.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\bin\Debug\netcoreapp3.1\myTrie.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\bin\Debug\netcoreapp3.1\myTrie.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\bin\Debug\netcoreapp3.1\myTrie.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\bin\Debug\netcoreapp3.1\myTrie.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\obj\Debug\netcoreapp3.1\myTrie.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\obj\Debug\netcoreapp3.1\myTrie.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\myTrie\myTrie\obj\Debug\netcoreapp3.1\myTrie.genruntimeconfig.cache
