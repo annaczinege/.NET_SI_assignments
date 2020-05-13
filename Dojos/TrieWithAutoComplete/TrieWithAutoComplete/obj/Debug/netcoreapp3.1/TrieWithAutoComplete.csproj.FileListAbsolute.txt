@@ -1,0 +1,12 @@
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\bin\Debug\netcoreapp3.1\TrieWithAutoComplete.exe
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\bin\Debug\netcoreapp3.1\TrieWithAutoComplete.deps.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\bin\Debug\netcoreapp3.1\TrieWithAutoComplete.runtimeconfig.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\bin\Debug\netcoreapp3.1\TrieWithAutoComplete.runtimeconfig.dev.json
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\bin\Debug\netcoreapp3.1\TrieWithAutoComplete.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\bin\Debug\netcoreapp3.1\TrieWithAutoComplete.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\obj\Debug\netcoreapp3.1\TrieWithAutoComplete.csprojAssemblyReference.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\obj\Debug\netcoreapp3.1\TrieWithAutoComplete.AssemblyInfoInputs.cache
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\obj\Debug\netcoreapp3.1\TrieWithAutoComplete.AssemblyInfo.cs
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\obj\Debug\netcoreapp3.1\TrieWithAutoComplete.dll
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\obj\Debug\netcoreapp3.1\TrieWithAutoComplete.pdb
+C:\Users\czine\Documents\Codecool\.NET_SI_assignments\Dojos\TrieWithAutoComplete\TrieWithAutoComplete\obj\Debug\netcoreapp3.1\TrieWithAutoComplete.genruntimeconfig.cache
